@@ -273,7 +273,7 @@ These attributes are described by the following columns of the summary table:
 | `post_auth_delay` &mdash; Waits N seconds on connection startup after authentication. (Can also be set with `PGOPTIONS` at session start.)  | Cluster<br/>Session | Reload<br/>Immediately                       | EPAS account  |
 | `pre_auth_delay` &mdash; Waits N seconds on connection startup before authentication.  | Cluster         | Reload                                 | EPAS account       |
 | `qreplace_function`(EPAS only) &mdash; The function to be used by Query Replace feature. Note: For internal use only.  | Session         | Immediately                              | Superuser                  |
-| `query_rewrite_enabled`(EPAS only) &mdash; Skils child table scans if their constraints guarantee that no rows match the query.  | Session         | Immediately                              | User                       |
+| `query_rewrite_enabled`(EPAS only) &mdash; Skips child table scans if their constraints guarantee that no rows match the query.  | Session         | Immediately                              | User                       |
 | `query_rewrite_integrity`(EPAS only) &mdash; Sets the degree to which query rewriting must be enforced.  | Session         | Immediately                              | Superuser                  |
 | `quote_all_identifiers` &mdash; When generating SQL fragments, quotes all identifiers. | Session         | Immediately                              | User                       |
 | `random_page_cost` &mdash; Sets the planner's estimate of the cost of a nonsequentially fetched disk page. | Session         | Immediately                              | User                       |
